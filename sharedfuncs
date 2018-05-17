@@ -47,12 +47,12 @@
     prompt3="You have to manually enter the following commands, then press ${BYellow}ctrl+d${Reset} or type ${BYellow}exit${Reset}:"
   #}}}
   # EDITOR {{{
-    AUTOMATIC_MODE=0
-    if [[ -f /usr/bin/vim ]]; then
-      EDITOR="vim"
-    elif [[ -z $EDITOR ]]; then
-      EDITOR="nano"
-    fi
+    # AUTOMATIC_MODE=0
+    # if [[ -f /usr/bin/vim ]]; then
+    #   EDITOR="vim"
+    # elif [[ -z $EDITOR ]]; then
+    EDITOR="nano"
+    # fi
   #}}}
   # DESKTOP ENVIRONMENT{{{
     CINNAMON=0
@@ -61,8 +61,8 @@
   #}}}
   # MOUNTPOINTS {{{
     EFI_MOUNTPOINT="/boot"
-    ROOT_MOUNTPOINT="/dev/sda1"
-    BOOT_MOUNTPOINT="/dev/sda"
+    ROOT_MOUNTPOINT="/dev/sda2"
+    BOOT_MOUNTPOINT="/dev/sda1"
     MOUNTPOINT="/mnt"
   #}}}
   ARCHI=`uname -m` # ARCHITECTURE
